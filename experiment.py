@@ -6,10 +6,10 @@ rate_by_epoch = [ 1e-4, 1e-5, 1e-6, 5e-7, 1e-7 ]
 # Reszta
 from os.path import exists
 from sys import stderr
-if not exists('train.py'):
+if not exists('train.pt'):
     print("train.py not found!", file=stderr)
     exit(1)
-if not exists('test.py'):
+if not exists('test.pt'):
     print("test.py not found!", file=stderr)
     exit(1)
 import torch

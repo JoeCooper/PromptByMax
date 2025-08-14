@@ -1,6 +1,6 @@
 from os.path import exists
 from sys import stderr
-if not exists('test.py'):
+if not exists('test.pt'):
     print("test.py not found!", file=stderr)
     exit(1)
 import torch
